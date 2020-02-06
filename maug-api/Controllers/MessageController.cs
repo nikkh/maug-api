@@ -30,6 +30,7 @@ namespace maug_api.Controllers
             _configuration = configuration;
             _logger = logger;
             serviceBusConnectionString = configuration["Azure:ServiceBus:ConnectionString"];
+            serviceBusConnectionString = configuration["AZURE_SERVICEBUS_CONNECTIONSTRING"];
         }
         // GET: api/Default
         [HttpGet]
